@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Calendar Form</title>
+	<meta charset = "UTF-8">
+	<link rel = "stylesheet" href = "style.css">
+
+</head>
+
+<body>
+
+<div id = "SlideShow">
+
+<table class = "mytable">
+
+		<tr> 
+			<td><img id = "prevArrow" src = "prev_blue.png" alt = "error" onmouseover = "toOrangeArrowPrev(this)" onmouseout = "toBlueArrowPrev(this)" onclick = "onClickPrevious()"> </td>
+			
+			<td>
+				<a href = "http://sua.umn.edu/events/calendar/event/14781/"><img class = "ads" alt = "Nerve" title = "Nerve Fri, Sep 30 7:00" src = "Nerve.jpg" style="width:800px;height:295px;"></a>
+
+				<a href = "http://sua.umn.edu/events/calendar/event/14786/"><img class = "ads" alt = "secret-life-of-pets" title = "secret-life-of-pets Fri, Oct 7 7:00" src = "secret-life-of-pets.jpg" style="width:800px;height:295px;"></a>
+
+				<a href = "http://sua.umn.edu/events/calendar/event/14794/"><img class = "ads" alt = "suicide-squad" title = "suicide-squad Fri, Oct 14 8:00" src = "suicide-squad.jpg" style="width:800px;height:295px;"></a></td>
+			
+			<td> <img id = "nextArrow" src = "next_blue.png" alt = "error" onmouseover = "toOrangeArrowNext(this)" onmouseout = "toBlueArrowNext(this)" onclick = "onClickNext()"> </td>
+		</tr>
+
+</table>
+
+
+</div>
+
+<div id = "ThreeButtons">
+
+	<img id = "first" class = "SlideButtons" src = "bullet_gray.png" onmouseover = "toOrange(this)" onmouseout = "toGray(this)" alt = "error" onclick = "onClickOne()">
+	<img id = "second" class = "SlideButtons" src = "bullet_gray.png" onmouseover = "toOrange(this)" onmouseout = "toGray(this)" alt = "error" onclick = "onClickTwo()">
+	<img id = "third" class = "SlideButtons" src = "bullet_gray.png" onmouseover = "toOrange(this)" onmouseout = "toGray(this)" alt = "error" onclick = "onClickThree()">
+
+</div>
+
+
+
+<script>
+
+var index = 0;
+
+scrollImages();
+
+<!-- Main SlideShow method -->
+function scrollImages(){
+
+<!-- Reset buttons to gray -->
+	toGray(first);
+	toGray(second);
+	toGray(third);
+
+
+<!-- Get picture elements -->
+	var items = document.getElementsByClassName("ads");
+
+
+<!-- Delete all pictures then place one -->
+	var i;
+	for (i = 0; i < items.length; i++) {
+		items[i].style.display = "none";
+	}
+	items[index].style.display = "block";
+
+
+<!-- Change one button blue -->
+	if(index == 0){
+		toBlue(first);
+	}
+	if(index == 1){	
+		toBlue(second);
+	}
+	if(index == 2){
+		toBlue(third);
+	}
+
+
+<!-- Increment index or revert to zero -->
+	if(index == (items.length -1) ){
+		index = 0;
+	}
+	else{
+		index++;
+	}
+
+
+<!-- Set Delay -->
+	var delay;
+	if(index == 0){
+		delay = 7000;
+	}
+	if(index == 1){	
+		delay = 5000;
+	}
+	if(index == 2){
+		delay = 3000;
+	}
+
+	setTimeout(scrollImages, delay);
+}
+
+
+<!-- Change button colors -->
+function toGray(bullet){
+	bullet.src = "bullet_gray.png";
+}
+
+function toOrange(bullet){
+	bullet.src = "bullet_orange.png";
+}
+
+function toBlue(bullet){
+	bullet.src = "bullet_blue.png";
+}
+
+
+<!-- Set arrow colors -->
+function toBlueArrowPrev(arrow){
+	arrow.src = "prev_blue.png";
+}
+
+function toBlueArrowNext(arrow){
+	arrow.src = "next_blue.png";
+}
+
+function toOrangeArrowPrev(arrow){
+	arrow.src = "prev_orange.png";
+}
+
+function toOrangeArrowNext(arrow){
+	arrow.src = "next_orange.png";
+}
+
+
+<!-- Arrow functions -->
+function onClickPrevious(){
+
+	if(index == 0){
+		index = 2;
+	}
+	else if(index == 1){
+		index = 0;
+	}
+	else{
+		index = 1;
+	}
+
+scrollImages();
+
+}
+
+function onClickNext(){
+
+	if(index == 0){
+		index = 1;
+	}
+	else if(index == 1){
+		index = 2;
+	}
+	else{
+		index = 0;
+	}
+scrollImages();
+
+}
+
+
+<!-- Button functions -->
+function onClickOne(){
+
+	index = 0;
+
+scrollImages();
+
+}
+
+function onClickTwo(){
+
+	index = 1;
+
+scrollImages();
+
+}
+
+function onClickThree(){
+
+	index = 2;
+
+scrollImages();
+
+}
+
+</script>
+
+
+
+<br>
+
+	<h1>Calendar Input</h1>
+
+	<nav>
+		<br>
+		<button type = "button" onclick = "window.location = 'goodw171_calendar.html'">My Calendar</button>
+		<button type = "button" onclick = "window.location = 'form.html'">Form Input</button>
+		<br>
+  		<br>
+
+	</nav>
+
+	<br>
+
+	<div>
+
+	<br>
+
+	<form action = "http://www-users.cselabs.umn.edu/~sharm398/index.php">
+		Event Name:
+		<input type = "text" name = "eventname">
+		<br>
+		Start Time:
+		<input type = "text" name = "starttime" placeholder = "--:-- --">
+		<br>
+		End Time:
+		<input type = "text" name = "endtime" placeholder = "--:-- --">
+		<br>
+		Location:
+		<input type = "text" name = "location">
+		<br>
+		Day of the Week:
+		<select name = "day">
+		<option value = "Monday">Monday</option>
+		<option value = "Tuesday">Tuesday</option>
+		<option value = "Wednesday">Wednesday</option>
+		<option value = "Thursday">Thursday</option>
+		<option value = "Friday">Friday</option>
+		</select>
+		<br>
+		<br>
+		<input type = "submit" value = "Submit">
+	
+	<br>
+	<br>
+
+	<div id = "banner">
+
+	<br>
+	<br>
+	<br>
+
+	</div>
+	
+	</form>
+
+	</div>
+
+</body>
+
+</html>

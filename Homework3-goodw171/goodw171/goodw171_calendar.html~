@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Derek's Calendar</title>
+	<meta charset = "UTF-8">
+	<link rel = "stylesheet" href = "style.css">
+
+</head>
+
+<body>
+
+	<h1>My Calendar</h1>
+
+	<nav>
+		<a href= "goodw171_calendar.html">My Calendar</a>
+		<a href= "form.html">Form Input</a>
+	</nav>
+
+	<br>
+
+	<table>
+
+		<tr id = "t1">
+		<th>Mon</th>
+		<td> <p><i>12:20 - 1:10 PM</i></p> <br><br> <p>CSCI 4061 Keller Hall - 1-250</p> </td>
+		<td> <p><i>2:30 - 4:25 PM</i></p> <br><br> <p>ID 3201 Bruininks Hall - 123</p> </td>
+		<td> - </td>
+		<td> - </td>
+		</tr>
+
+		<tr id = "t2">
+		<th>Tue</th>
+		<td> <p><i>8:15 - 9:30 AM</i></p> <br><br> <p>CSCI 3081W Bruininks Hall - 412</p> </td>
+		<td> <p><i>9:45 - 11:00 AM</i></p> <br><br> <p>CSCI 4061 
+			<a href="https://www.bellmuseum.umn.edu/">Bell Museum</a> - Auditorium</p> </td>
+		<td> <p><i>1:00 - 2:15 PM</i></p> <br><br> <p>CSCI 4707 Fraser Hall - 101</p> </td>
+		<td> <p><i>2:30 - 3:45 PM</i></p> <br><br> <p>CSCI 4131 Bruininks Hall - 230</p> </td>
+		</tr>
+
+		<tr id = "t1">
+		<th>Wed</th>
+		<td> - </td>
+		<td> - </td>
+		<td> - </td>
+		<td> - </td>
+		</tr>
+
+		<tr id = "t2">
+		<th>Thu</th>
+		<td> <p><i>8:15 - 9:30 AM</i></p> <br><br> <p>CSCI 3081W Bruininks Hall - 412</p> </td>
+		<td> <p><i>9:45 - 11:00 AM</i></p> <br><br> <p>CSCI 4061 
+			<a href="https://www.bellmuseum.umn.edu/">Bell Museum</a> - Auditorium</p> </td>
+		<td> <p><i>1:00 - 2:15 PM</i></p> <br><br> <p>CSCI 4707 Fraser Hall - 101</p> </td>
+		<td> <p><i>2:30 - 3:45 PM</i></p> <br><br> <p>CSCI 4131 Bruininks Hall - 230</p> </td>
+		</tr>
+
+		<tr id = "t1">
+		<th>Fri</th>
+		<td> <p><i>10:10 - 11:00 AM</i></p> <br><br> <p>Keller Hall - 1-250</p> </td>
+		<td> - </td>
+		<td> - </td>
+		<td> - </td>
+		</tr>
+
+	</table>
+
+<p><i>This page has been tested in Chrome and Firefox</i></p>
+
+</body>
+
+</html>

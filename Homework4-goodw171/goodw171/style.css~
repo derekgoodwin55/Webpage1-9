@@ -1,0 +1,150 @@
+body {
+    background-color: #7FFF00;
+    text-align: center;
+}
+h1 {
+    color: blue;
+    text-align: center;
+}
+p {
+    color: black;
+    text-align: center;
+}
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+tr{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+form{
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav{
+    display: block;
+    background-color: red;
+}
+
+#t1{
+    background-color: #CD5C5C;
+}
+#t2{
+    background-color: #FFD700;
+}
+#t3{
+    background-color: #CD5C5C;
+}
+#t4{
+    background-color: #FFD700;
+}
+#t5{
+    background-color: #CD5C5C;
+}
+span{
+    font-weight: bold;
+    font-size: 150%;
+}
+
+#p1{
+    font-style: italic;
+    font-weight: bold;
+}
+#p2{
+    font-style: italic;
+    font-weight: bold;
+}
+#p3{
+    font-style: italic;
+    font-weight: bold;
+}
+#p4{
+    font-style: italic;
+    font-weight: bold;
+}
+#p5{
+    font-style: italic;
+    font-weight: bold;
+}
+#p6{
+    font-style: italic;
+    font-weight: bold;
+}
+#p7{
+    font-style: italic;
+    font-weight: bold;
+}
+#p8{
+    font-style: italic;
+    font-weight: bold;
+}
+#p9{
+    font-style: italic;
+    font-weight: bold;
+}
+#p10{
+    font-style: italic;
+    font-weight: bold;
+}
+#p11{
+    font-style: italic;
+    font-weight: bold;
+}
+
+#h01{
+    background-color: red;
+    font-weight: bold;
+    padding: 30px;
+}
+#h02{
+    background-color: red;
+    font-weight: bold;
+    padding: 30px;
+}
+#h03{
+    background-color: red;
+    font-weight: bold;
+    padding: 30px;
+}
+#h04{
+    background-color: red;
+    font-weight: bold;
+    padding: 30px;
+}
+#h05{
+    background-color: red;
+    font-weight: bold;
+    padding: 30px;
+}
+
+#d01{
+    margin-left: auto;
+    margin-right: auto;
+}
+#SlideShow{
+    position: relative;
+}
+#ThreeButtons{
+    position: relative;
+    top: 5px;
+}
+#mytable{
+    margin-left: auto;
+    margin-right: auto;
+}

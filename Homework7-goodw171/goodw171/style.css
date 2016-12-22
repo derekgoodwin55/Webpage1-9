@@ -1,0 +1,58 @@
+body {
+    background-color: #AFEEEE;
+    text-align: center;
+}
+h1 {
+    color: red;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+    color: black;
+    text-align: center;
+}
+#navlinks1 {
+    background-color: #00FF7F;
+    color: black;
+}
+#navlinks2 {
+    background-color: #00FF7F;
+    color: black;
+}
+#calendar {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#theForm {
+    display: table;
+    margin: auto;
+    text-align: left;
+    background-color: white;
+    padding: 25px;
+    border-radius: 2px;
+    background-color: #00FF7F;
+}
+#PHPTable {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: red;
+}
+td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #00FF7F;
+    margin-left: auto;
+    margin-right: auto;
+}
+#rederrors{
+    color: red;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Derek's Calendar</title>
+	<meta name = "viewport" content = "initial-scale=1.0">
+	<meta charset = "UTF-8">
+	<link rel = "stylesheet" href = "style.css">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 50%;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 25px;
+
+      }
+    </style>
+
+<script src= "http://maps.googleapis.com/maps/api/js?key=AIzaSyDTtpwUM1jnnVZZ3qoQ9y1GTcgLUIqGHKo&callback=initMap" async defer></script>
+
+</head>
+
+<body>
+	<h1>My Calendar</h1>
+
+	<nav>
+		<button type = "button" onclick = "window.location = 'goodw171_calendar.html'">My Calendar</button>
+		<button type = "button" onclick = "window.location = 'form.html'">Form Input</button>
+	</nav>
+
+	<br>
+ 
+		<script>
+			var dayNum = new Date();
+			var weekday = dayNum.getDay();
+			var dayText = [
+				"Sunday --- Vikings Football!!",
+
+				"Monday --- 12:20 - 1:10 PM, CSCI 4061 Keller Hall - 1-250 --- 2:30 - 4:25 PM, ID 3201 Bruininks Hall - 123",
+
+				"Tuesday --- 8:15 - 9:30 AM, CSCI 3081W Bruininks Hall --- 9:45 - 11:00 AM, CSCI 4061 Bell Museum Auditorium --- 1:00 - 2:15 PM, CSCI 4707 Fraser Hall - 101 --- 2:30 - 3:45 PM, CSCI 4131 Bruininks Hall - 230",
+
+				"Wednesday --- No Classes --- Day of Homework",
+
+				"Thursday --- 8:15 - 9:30 AM, CSCI 3081W Bruininks Hall --- 9:45 - 11:00 AM, CSCI 4061 Bell Museum Auditorium --- 1:00 - 2:15 PM, CSCI 4707 Fraser Hall - 101 --- 2:30 - 3:45 PM, CSCI 4131 Bruininks Hall - 230",
+
+				"Friday --- 10:10 - 11:00 AM, Keller Hall - 1-250",
+
+				"Saturday --- Gopher Football!!"];
+
+			document.write("Events for the Day --- " + dayText[weekday] + " ---")
+		</script>
+
+	<br>
+	<br>
+	
+	<br>
+
+	<table id = "calendar">
+
+		<tr id = "t1">
+		<th id = "h01"> Mon </th>
+		<td id = "d01"> <p id = "p1">12:20 - 1:10 PM</p> <p onmouseover = "showImgK1()" onmouseout = "hideImgK2()">CSCI 4061 Keller Hall - 1-250</p> <img src = "kellerhall.jpg" id = "Khall" alt = "kellerhall" style="width:100px;height:50px;"></div></td>
+		<td id = "d02"> <p id = "p11">2:30 - 4:25 PM</p> <p>ID 3201 Bruininks Hall - 123</p> <br> <br> <div id = "bHall"> </div> </td>
+		<td id = "d03"> - </td>
+		<td id = "d04"> - </td>
+		</tr>
+
+		<tr id = "t2">
+		<th id = "h02"> Tue </th>
+		<td id = "d05"> <p id = "p2">8:15 - 9:30 AM</p> <p>CSCI 3081W Bruininks Hall - 412</p> <br> <br> <br> <br> </td>
+		<td id = "d06"> <p id = "p3">9:45 - 11:00 AM</p> <p>CSCI 4061 
+			<a href="https://www.bellmuseum.umn.edu/">Bell Museum</a> - Auditorium</p> <br> <br> <br> <br> </td>
+		<td id = "d07"> <p id = "p4">1:00 - 2:15 PM</p> <p>CSCI 4707 Fraser Hall - 101</p> <br> <br> <br> <br> </td>
+		<td id = "d08"> <p id = "p5">2:30 - 3:45 PM</p> <p>CSCI 4131 Bruininks Hall - 230</p> <br> <br> <br> <br> </td>
+		</tr>
+
+		<tr id = "t3">
+		<th id = "h03"> Wed </th>
+		<td id = "d09"> - </td>
+		<td id = "d10"> - </td>
+		<td id = "d11"> - </td>
+		<td id = "d12"> - </td>
+		</tr>
+
+		<tr id = "t4">
+		<th id = "h04"> Thu </th>
+		<td id = "d13"> <p id = "p6">8:15 - 9:30 AM</p> <p>CSCI 3081W Bruininks Hall - 412</p> <br> <br> <br> <br> </td>
+		<td id = "d14"> <p id = "p7">9:45 - 11:00 AM</p> <p>CSCI 4061 
+			<a href="https://www.bellmuseum.umn.edu/">Bell Museum</a> - Auditorium</p> <br> <br> <br> <br> </td>
+		<td id = "d15"> <p id = "p8">1:00 - 2:15 PM</p> <p>CSCI 4707 Fraser Hall - 101</p> <br> <br> <br> <br> </td>
+		<td id = "d16"> <p id = "p9">2:30 - 3:45 PM</p> <p>CSCI 4131 Bruininks Hall - 230</p> <br> <br> <br> <br> </td>
+		</tr>
+
+		<tr id = "t5">
+		<th id = "h05"> Fri </th>
+		<td id = "d17"> <p id = "p10">10:10 - 11:00 AM</p> <p>Keller Hall - 1-250</p> <br> <br> <br> <br>  </td>
+		<td id = "d18"> - </td>
+		<td id = "d19"> - </td>
+		<td id = "d20"> - </td>
+		</tr>
+
+	</table>
+
+<div id = "f02">
+
+	<form>
+
+		<input type = "text" name = "submitText"> <input type = "submit" value = "Submit">
+		<br>
+		<p id = "inL">Radius between 500 and 50,000 </p><input type = "text" name = "findNearbyRestaurants"> <button type = "submit" value = "Submit">Find Nearby Restaurants</button>
+
+	</form>
+
+</div>
+
+<div id = "map"></div>
+<script>
+
+function showImgK1(){
+document.getElementById("Khall").style.visibility = "visible";
+}
+function hideImgK1(){
+document.getElementById("Khall").style.visibility = "hidden";
+}
+	var map;
+	function initMap() {
+		map = new google.maps.Map(document.getElementById('map'), {
+          	center: {lat: 44.974, lng: -93.234},
+		zoom: 15
+	});
+	var geocoder = new google.maps.Geocoder();
+	var location = "Smith Hall, MN";
+	}
+
+
+
+</script>
+
+</body>
+
+</html>

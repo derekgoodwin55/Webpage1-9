@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Derek's Calendar</title>
+	<meta name = "viewport" content = "initial-scale=1.0">
+	<meta charset = "UTF-8">
+	<link rel = "stylesheet" href = "style.css">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 50%;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 25px;
+
+      }
+    </style>
+
+<script src= "http://maps.googleapis.com/maps/api/js?key=AIzaSyDTtpwUM1jnnVZZ3qoQ9y1GTcgLUIqGHKo&callback=initMap&libraries=places" async defer></script>
+
+</head>
+
+<body>
+	<h1>My Calendar</h1>
+
+	<nav>
+		<button type = "button" onclick = "window.location = 'goodw171_calendar.html'">My Calendar</button>
+		<button type = "button" onclick = "window.location = 'form.html'">Form Input</button>
+	</nav>
+
+	<br>
+ 
+		<script>
+			var dayNum = new Date();
+			var weekday = dayNum.getDay();
+			var dayText = [
+				"Sunday --- Vikings Football!!",
+
+				"Monday --- 12:20 - 1:10 PM, CSCI 4061 Keller Hall - 1-250 --- 2:30 - 4:25 PM, ID 3201 Bruininks Hall - 123",
+
+				"Tuesday --- 8:15 - 9:30 AM, CSCI 3081W Bruininks Hall --- 9:45 - 11:00 AM, CSCI 4061 Bell Museum Auditorium --- 1:00 - 2:15 PM, CSCI 4707 Fraser Hall - 101 --- 2:30 - 3:45 PM, CSCI 4131 Bruininks Hall - 230",
+
+				"Wednesday --- No Classes --- Day of Homework",
+
+				"Thursday --- 8:15 - 9:30 AM, CSCI 3081W Bruininks Hall --- 9:45 - 11:00 AM, CSCI 4061 Bell Museum Auditorium --- 1:00 - 2:15 PM, CSCI 4707 Fraser Hall - 101 --- 2:30 - 3:45 PM, CSCI 4131 Bruininks Hall - 230",
+
+				"Friday --- 10:10 - 11:00 AM, Keller Hall - 1-250",
+
+				"Saturday --- Gopher Football!!"];
+
+			document.write("Events for the Day --- " + dayText[weekday] + " ---")
+		</script>
+
+	<br>
+	<br>
+	
+	<br>
+
+	<table id = "calendar">
+
+		<tr id = "t1">
+		<th id = "h01"> Mon </th>
+		<td id = "d01"> <p id = "p1">12:20 - 1:10 PM</p> <p onclick = "showDetails(this)" data-classes-type = "{lat: 44.974512, lng: -93.232549}" onmouseover = "showImgK1()" onmouseout = "hideImgK1()">CSCI 4061 Keller Hall - 1-250</p> <img src = "kellerhall.jpg" id = "Khall1" alt = "kellerhall" style="width:100px;height:50px;"> </td>
+		<td id = "d02"> <p id = "p11">2:30 - 4:25 PM</p> <p onclick = "showDetails(this)" data-classes-type = "{lat: 44.974079, lng: -93.237388}" onmouseover = "showImgB1()" onmouseout = "hideImgB1()">ID 3201 Bruininks Hall - 123</p> <img src = "bruininks.jpg" id = "Bhall1" alt = "bruininskhall" style="width:100px;height:50px;"> </td>
+		<td id = "d03"> - </td>
+		<td id = "d04"> - </td>
+		</tr>
+
+		<tr id = "t2">
+		<th id = "h02"> Tue </th>
+		<td id = "d05"> <p id = "p2">8:15 - 9:30 AM</p> <p onclick = "showDetails(this)" data-classes-type = "{lat: 44.974079, lng: -93.237388}" onmouseover = "showImgB2()" onmouseout = "hideImgB2()">CSCI 3081W Bruininks Hall - 412</p> <img src = "bruininks.jpg" id = "Bhall2" alt = "bruininskhall" style="width:100px;height:50px;"> </td>
+		<td id = "d06"> <p id = "p3">9:45 - 11:00 AM</p> <p onclick = "showDetails(this)" data-classes-type = "{lat: 44.977829, lng: -93.233398}" onmouseover = "showImgBeMus1()" onmouseout = "hideImgBeMus1()">CSCI 4061 
+			<a href="https://www.bellmuseum.umn.edu/">Bell Museum</a> - Auditorium</p> <img src = "bellmuseum.jpg" id = "BeMus1" alt = "bellmuseum" style="width:100px;height:50px;"> </td>
+		<td id = "d07"> <p id = "p4">1:00 - 2:15 PM</p> <p onclick = "showDetails(this)" data-classes-type = "{lat: 44.97559, lng: -93.237387}" onmouseover = "showImgF1()" onmouseout = "hideImgF1()">CSCI 4707 Fraser Hall - 101</p> <img src = "fraserhall.jpg" id = "Fhall1" alt = "fraserhall" style="width:100px;height:50px;"> </td>
+		<td id = "d08"> <p id = "p5">2:30 - 3:45 PM</p> <p onclick = "showDetails(this)" data-classes-type = "{lat: 44.974079, lng: -93.237388}" onmouseover = "showImgB3()" onmouseout = "hideImgB3()">CSCI 4131 Bruininks Hall - 230</p> <img src = "bruininks.jpg" id = "Bhall3" alt = "bruininskhall" style="width:100px;height:50px;"> </td>
+		</tr>
+
+		<tr id = "t3">
+		<th id = "h03"> Wed </th>
+		<td id = "d09"> - </td>
+		<td id = "d10"> - </td>
+		<td id = "d11"> - </td>
+		<td id = "d12"> - </td>
+		</tr>
+
+		<tr id = "t4">
+		<th id = "h04"> Thu </th>
+		<td id = "d13"> <p id = "p6">8:15 - 9:30 AM</p> <p onclick = "showDetails(this)" data-classes-type = "{lat: 44.974079, lng: -93.237388}" onmouseover = "showImgB4()" onmouseout = "hideImgB4()">CSCI 3081W Bruininks Hall - 412</p> <img src = "bruininks.jpg" id = "Bhall4" alt = "bruininskhall" style="width:100px;height:50px;"> </td>
+		<td id = "d14"> <p id = "p7">9:45 - 11:00 AM</p> <p onclick = "showDetails(this)" data-classes-type = "{lat: 44.977829, lng: -93.233398}" onmouseover = "showImgBeMus2()" onmouseout = "hideImgBeMus2()">CSCI 4061 
+			<a href="https://www.bellmuseum.umn.edu/">Bell Museum</a> - Auditorium</p> <img src = "bellmuseum.jpg" id = "BeMus2" alt = "bellmuseum" style="width:100px;height:50px;"> </td>
+		<td id = "d15"> <p id = "p8">1:00 - 2:15 PM</p> <p onclick = "showDetails(this)" data-classes-type = "{lat: 44.97559, lng: -93.237387}" onmouseover = "showImgF2()" onmouseout = "hideImgF2()">CSCI 4707 Fraser Hall - 101</p> <img src = "fraserhall.jpg" id = "Fhall2" alt = "fraserhall" style="width:100px;height:50px;"> </td>
+		<td id = "d16"> <p id = "p9">2:30 - 3:45 PM</p> <p onclick = "showDetails(this)" data-classes-type = "{lat: 44.974079, lng: -93.237388}" onmouseover = "showImgB5()" onmouseout = "hideImgB5()">CSCI 4131 Bruininks Hall - 230</p> <img src = "bruininks.jpg" id = "Bhall5" alt = "bruininskhall" style="width:100px;height:50px;"> </td>
+		</tr>
+
+		<tr id = "t5">
+		<th id = "h05"> Fri </th>
+		<td id = "d17"> <p id = "p10">10:10 - 11:00 AM</p> <p onclick = "showDetails(this)" data-classes-type = "{lat: 44.974512, lng: -93.232549}" onmouseover = "showImgK2()" onmouseout = "hideImgK2()">Keller Hall - 1-250</p> <img src = "kellerhall.jpg" id = "Khall2" alt = "kellerhall" style="width:100px;height:50px;"> </td>
+		<td id = "d18"> - </td>
+		<td id = "d19"> - </td>
+		<td id = "d20"> - </td>
+		</tr>
+
+	</table>
+
+<div id = "f02">
+
+	<form>
+
+		<input id = "address" type = "text" value = "Find City Here">
+		<input id = "submit" type = "button" value = "Submit">
+		<br>
+		<p id = "inL">Radius between 500 and 50,000 </p>
+		<input id = "distance" type = "text">
+		<input id = "submit2" type = "button" value = "Find Nearby Restaurants">
+
+	</form>
+
+</div>
+
+<div id = "map"></div>
+
+<script>
+
+//get data-classes-type (lat/long coordinates from calendar text
+function showDetails(classT) {
+    var classesType = classT.getAttribute("data-classes-type");
+     alert("Location info for this building: " + classesType);
+}
+
+// mouseover and mouseout functions for all 11 building pictures
+function showImgK1(){
+document.getElementById("Khall1").style.visibility = "visible";
+}
+function hideImgK1(){
+document.getElementById("Khall1").style.visibility = "hidden";
+}
+function showImgK2(){
+document.getElementById("Khall2").style.visibility = "visible";
+}
+function hideImgK2(){
+document.getElementById("Khall2").style.visibility = "hidden";
+}
+function showImgB1(){
+document.getElementById("Bhall1").style.visibility = "visible";
+}
+function hideImgB1(){
+document.getElementById("Bhall1").style.visibility = "hidden";
+}
+function showImgB2(){
+document.getElementById("Bhall2").style.visibility = "visible";
+}
+function hideImgB2(){
+document.getElementById("Bhall2").style.visibility = "hidden";
+}
+function showImgB3(){
+document.getElementById("Bhall3").style.visibility = "visible";
+}
+function hideImgB3(){
+document.getElementById("Bhall3").style.visibility = "hidden";
+}
+function showImgB4(){
+document.getElementById("Bhall4").style.visibility = "visible";
+}
+function hideImgB4(){
+document.getElementById("Bhall4").style.visibility = "hidden";
+}
+function showImgB5(){
+document.getElementById("Bhall5").style.visibility = "visible";
+}
+function hideImgB5(){
+document.getElementById("Bhall5").style.visibility = "hidden";
+}
+function showImgBeMus1(){
+document.getElementById("BeMus1").style.visibility = "visible";
+}
+function hideImgBeMus1(){
+document.getElementById("BeMus1").style.visibility = "hidden";
+}
+function showImgBeMus2(){
+document.getElementById("BeMus2").style.visibility = "visible";
+}
+function hideImgBeMus2(){
+document.getElementById("BeMus2").style.visibility = "hidden";
+}
+function showImgF1(){
+document.getElementById("Fhall1").style.visibility = "visible";
+}
+function hideImgF1(){
+document.getElementById("Fhall1").style.visibility = "hidden";
+}
+function showImgF2(){
+document.getElementById("Fhall2").style.visibility = "visible";
+}
+function hideImgF2(){
+document.getElementById("Fhall2").style.visibility = "hidden";
+}
+
+function initMap() {
+
+	var map;
+
+//Keller Hall coordinates
+	var location1 = {lat: 44.974512, lng: -93.232549};
+
+//Bruininks Hall coordinates
+	var location2 = {lat: 44.974079, lng: -93.237388};
+
+//Bell Museum coordinates
+	var location3 = {lat: 44.977829, lng: -93.233398};
+
+//Fraser Hall coordinates
+	var location4 = {lat: 44.97559, lng: -93.237387};
+
+	map = new google.maps.Map(document.getElementById('map'), {
+        	center: {lat: 44.974, lng: -93.234},
+		zoom: 15
+	});
+
+// Add 4 initial markers from calendar buildings
+	var marker1 = new google.maps.Marker({
+		position: location1,
+		map: map
+	});
+	var marker2 = new google.maps.Marker({
+		position: location2,
+		map: map
+	});
+	var marker3 = new google.maps.Marker({
+		position: location3,
+		map: map
+	});
+	var marker4 = new google.maps.Marker({
+		position: location4,
+		map: map
+	});
+
+//Info for markers
+	var infowindow1 = new google.maps.InfoWindow({
+		content: "Here is:" + '<p>Keller Hall</p>' + '<p>4061 and 3081 Labs</p>'
+	});
+	var infowindow2 = new google.maps.InfoWindow({
+		content: "Here is:" + '<p>Bruininks Hall</p>' + '<p>3201 and 4131 Lecture</p>'
+	});
+	var infowindow3 = new google.maps.InfoWindow({
+		content: "Here is:" + '<p>Bell Museum</p>' + '<p>4061 Lecture</p>'
+	});
+	var infowindow4 = new google.maps.InfoWindow({
+		content: "Here is:" + '<p>Fraser Hall</p>' + '<p>4707 Lecture</p>'
+	});
+
+//attach info to markers
+	marker1.addListener('click', function() { infowindow1.open(map,marker1); });
+	marker2.addListener('click', function() { infowindow2.open(map,marker2); });
+	marker3.addListener('click', function() { infowindow3.open(map,marker3); });
+	marker4.addListener('click', function() { infowindow4.open(map,marker4); });
+
+//Animate starting markers to bounce
+	marker1.setAnimation(google.maps.Animation.BOUNCE);
+	marker2.setAnimation(google.maps.Animation.BOUNCE);
+	marker3.setAnimation(google.maps.Animation.BOUNCE);
+	marker4.setAnimation(google.maps.Animation.BOUNCE);
+
+//make geocoder object
+	var geocoder = new google.maps.Geocoder();
+
+// geocoder Event Listener and function call
+        document.getElementById('submit').addEventListener('click', function() {
+		geocodeAddress(geocoder, map);
+	});
+
+//restaurants object and function call
+	var restaurants = new google.maps.places.PlacesService(map);
+        document.getElementById('submit2').addEventListener('click', function() {
+		getRestaurants();
+	});
+
+// Google API used as a base via https://developers.google.com/maps/documentation/javascript/places allowed in instructions
+function getRestaurants(){
+
+// Check if radius is out of bounds. If so, exit (return from) function
+	if(document.getElementById('distance').value > 50000 || document.getElementById('distance').value < 500){
+		alert('Radius out of bounds');
+		return;
+	}
+//perform search based off distance entered in search bar.
+	restaurants.nearbySearch({
+		location: {lat: 44.974, lng: -93.234},
+		radius: document.getElementById('distance').value,
+		type: ['restaurant']
+	}, createArray);
+
+//create array of found places
+	function createArray(results, status){
+		if (status === google.maps.places.PlacesServiceStatus.OK) {
+			for (var i = 0; i < results.length; i++) {
+				createMarker(results[i]);
+			}
+		}
+	}
+//create markers for places in arrays
+	function createMarker(place) {
+		var marker = new google.maps.Marker({
+			map: map,
+			position: place.geometry.location
+		});
+//add info windows for markers	
+	var info = new google.maps.InfoWindow();
+	google.maps.event.addListener(marker, 'click', function() {
+		info.setContent(place.name);
+		info.open(map, this);
+	});
+	}
+}
+
+//end initMap()	
+}
+
+
+// Google API used as a base via https://developers.google.com/maps/documentation/javascript/examples/geocoding-simple allowed in instructions
+function geocodeAddress(geocoder, resultsMap) {
+	var address = document.getElementById('address').value;
+        geocoder.geocode({'address': address}, function(results, status) {
+	if (status === 'OK') {
+		var marker = new google.maps.Marker({
+		map: resultsMap,
+		position: results[0].geometry.location,
+		});
+// change zoom and center after geocoding
+		resultsMap.fitBounds(results[0].geometry.viewport);
+		resultsMap.setCenter(results[0].geometry.location);
+	}else {
+		alert('Geocode was not successful: ' + status);
+	}
+        });
+}
+
+</script>
+
+</body>
+
+</html>

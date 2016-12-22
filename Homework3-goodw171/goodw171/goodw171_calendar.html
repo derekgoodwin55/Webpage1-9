@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Derek's Calendar</title>
+	<meta charset = "UTF-8">
+	<link rel = "stylesheet" href = "style.css">
+
+</head>
+
+<body>
+	<h1>My Calendar</h1>
+
+	<nav>
+		<button type = "button" onclick = "window.location = 'goodw171_calendar.html'">My Calendar</button>
+		<button type = "button" onclick = "window.location = 'form.html'">Form Input</button>
+	</nav>
+
+	<br>
+
+	<marquee>
+ 
+		<script>
+			var dayNum = new Date();
+			var weekday = dayNum.getDay();
+			var dayText = [
+				"Sunday --- Vikings Football!!",
+
+				"Monday --- 12:20 - 1:10 PM, CSCI 4061 Keller Hall - 1-250 --- 2:30 - 4:25 PM, ID 3201 Bruininks Hall - 123",
+
+				"Tuesday --- 8:15 - 9:30 AM, CSCI 3081W Bruininks Hall --- 9:45 - 11:00 AM, CSCI 4061 Bell Museum Auditorium --- 1:00 - 2:15 PM, CSCI 4707 Fraser Hall - 101 --- 2:30 - 3:45 PM, CSCI 4131 Bruininks Hall - 230",
+
+				"Wednesday --- No Classes --- Day of Homework",
+
+				"Thursday --- 8:15 - 9:30 AM, CSCI 3081W Bruininks Hall --- 9:45 - 11:00 AM, CSCI 4061 Bell Museum Auditorium --- 1:00 - 2:15 PM, CSCI 4707 Fraser Hall - 101 --- 2:30 - 3:45 PM, CSCI 4131 Bruininks Hall - 230",
+
+				"Friday --- 10:10 - 11:00 AM, Keller Hall - 1-250",
+
+				"Saturday --- Gopher Football!!"];
+
+			document.write("Events for the Day --- " + dayText[weekday] + " ---")
+		</script>
+
+	</marquee>
+
+	<br>
+	<br>
+
+<div>
+	
+	<br>
+
+	<table>
+
+		<tr id = "t1">
+		<th id = "h01"> Mon </th>
+		<td> <p id = "p1">12:20 - 1:10 PM</p> <br><br> <p>CSCI 4061 Keller Hall - 1-250</p> </td>
+		<td> <p id = "p11">2:30 - 4:25 PM</p> <br><br> <p>ID 3201 Bruininks Hall - 123</p> </td>
+		<td> - </td>
+		<td> - </td>
+		</tr>
+
+		<tr id = "t2">
+		<th id = "h02"> Tue </th>
+		<td> <p id = "p2">8:15 - 9:30 AM</p> <br><br> <p>CSCI 3081W Bruininks Hall - 412</p> </td>
+		<td> <p id = "p3">9:45 - 11:00 AM</p> <br><br> <p>CSCI 4061 
+			<a href="https://www.bellmuseum.umn.edu/">Bell Museum</a> - Auditorium</p> </td>
+		<td> <p id = "p4">1:00 - 2:15 PM</p> <br><br> <p>CSCI 4707 Fraser Hall - 101</p> </td>
+		<td> <p id = "p5">2:30 - 3:45 PM</p> <br><br> <p>CSCI 4131 Bruininks Hall - 230</p> </td>
+		</tr>
+
+		<tr id = "t3">
+		<th id = "h03"> Wed </th>
+		<td> - </td>
+		<td> - </td>
+		<td> - </td>
+		<td> - </td>
+		</tr>
+
+		<tr id = "t4">
+		<th id = "h04"> Thu </th>
+		<td> <p id = "p6">8:15 - 9:30 AM</p> <br><br> <p>CSCI 3081W Bruininks Hall - 412</p> </td>
+		<td> <p id = "p7">9:45 - 11:00 AM</p> <br><br> <p>CSCI 4061 
+			<a href="https://www.bellmuseum.umn.edu/">Bell Museum</a> - Auditorium</p> </td>
+		<td> <p id = "p8">1:00 - 2:15 PM</p> <br><br> <p>CSCI 4707 Fraser Hall - 101</p> </td>
+		<td> <p id = "p9">2:30 - 3:45 PM</p> <br><br> <p>CSCI 4131 Bruininks Hall - 230</p> </td>
+		</tr>
+
+		<tr id = "t5">
+		<th id = "h05"> Fri </th>
+		<td> <p id = "p10">10:10 - 11:00 AM</p> <br><br> <p>Keller Hall - 1-250</p> </td>
+		<td> - </td>
+		<td> - </td>
+		<td> - </td>
+		</tr>
+
+	</table>
+
+	<p><i>This page has been tested in Chrome and Firefox</i></p>
+
+	<div id = "d01">
+
+		<img src="http://finance-commerce.com/files/2014/12/BellMuseum1.jpg" alt="Bell Museum" style="width:324px;height:250px;">
+		<img src="http://educationcareerarticles.com/wp-content/uploads/2013/07/computer-programming.jpg" alt="PROGRAMMING" style="width:324px;height:250px;">
+		<img src="http://cdn4.sportngin.com/attachments/photo/1047/6988/TCF_Bank_Stadium_large.jpg" alt="TCF Stadium" style="width:324px;height:250px;">
+
+	</div>
+
+</div>
+
+</body>
+
+</html>

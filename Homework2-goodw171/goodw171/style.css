@@ -1,0 +1,98 @@
+body {
+    background-color: white;
+    text-align: center;
+}
+h1 {
+    color: blue;
+    text-align: center;
+}
+p {
+    color: black;
+    text-align: center;
+}
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+tr{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+form{
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav{
+    display: block;
+    background-color: #7CFC00;
+}
+#t1{
+    background-color: #CD5C5C;
+}
+#t2{
+    background-color: #FFD700;
+}
+#t3{
+    background-color: #CD5C5C;
+}
+#t4{
+    background-color: #FFD700;
+}
+#t5{
+    background-color: #CD5C5C;
+}
+div{
+    background-color: #20B2AA;
+}
+span{
+    font-weight: bold;
+    font-size: 150%;
+}
+#p1{
+    font-style: italic;
+}
+#p2{
+    font-style: italic;
+}
+#p3{
+    font-style: italic;
+}
+#p4{
+    font-style: italic;
+}
+#p5{
+    font-style: italic;
+}
+#p6{
+    font-style: italic;
+}
+#p7{
+    font-style: italic;
+}
+#p8{
+    font-style: italic;
+}
+#p9{
+    font-style: italic;
+}
+#p10{
+    font-style: italic;
+}
+#p11{
+    font-style: italic;
+}

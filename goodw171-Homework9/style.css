@@ -1,0 +1,90 @@
+p {
+    color: black;
+    text-align: center;
+}
+#navlinks1{
+  background-color: #00FF00;
+  color: black;
+  text-align: center;
+}
+
+#navlinks2 {
+    background-color: #00FF00;
+    color: black;
+    text-align: center;
+}
+
+#calendar {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#theForm {
+    display: table;
+    margin: auto;
+    text-align: left;
+    background-color: white;
+    padding: 25px;
+    border-radius: 2px;
+    background-color: #00FF7F;
+}
+
+#PHPTable {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #87CEFA;
+}
+
+td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #B0E0E6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#adminPage{
+  background-color: #D3D3D3;
+}
+
+#AlogoutButton{
+  padding-left: 15px;
+}
+
+#logoutAndWelcome{
+  float:right;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+#logoutAndWelcome2{
+  float:right;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+#header{
+  color: blue;
+  text-align: center;
+  position: center;
+}
+
+#header2{
+  color: blue;
+  text-align: center;
+  position: center;
+}
+
+#searchbar{
+  position: center;
+  text-align: center;
+}

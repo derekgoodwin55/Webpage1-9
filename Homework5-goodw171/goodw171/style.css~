@@ -1,0 +1,230 @@
+body {
+    background-color: #E6E6FA;
+    text-align: center;
+}
+h1 {
+    color: blue;
+    text-align: center;
+}
+p {
+    color: black;
+    text-align: center;
+}
+#calendar{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#f01{
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#f02{
+    background-color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+nav{
+    display: block;
+    background-color: #fff333;
+}
+
+#t1{
+    background-color: #CD5C5C;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+#t2{
+    background-color: #FFD700;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+#t3{
+    background-color: #CD5C5C;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+#t4{
+    background-color: #FFD700;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+#t5{
+    background-color: #CD5C5C;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#p1{
+    font-style: italic;
+    font-weight: bold;
+}
+#p2{
+    font-style: italic;
+    font-weight: bold;
+}
+#p3{
+    font-style: italic;
+    font-weight: bold;
+}
+#p4{
+    font-style: italic;
+    font-weight: bold;
+}
+#p5{
+    font-style: italic;
+    font-weight: bold;
+}
+#p6{
+    font-style: italic;
+    font-weight: bold;
+}
+#p7{
+    font-style: italic;
+    font-weight: bold;
+}
+#p8{
+    font-style: italic;
+    font-weight: bold;
+}
+#p9{
+    font-style: italic;
+    font-weight: bold;
+}
+#p10{
+    font-style: italic;
+    font-weight: bold;
+}
+#p11{
+    font-style: italic;
+    font-weight: bold;
+}
+
+#h01{
+    font-weight: bold;
+    padding: 30px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+#h02{
+    font-weight: bold;
+    padding: 30px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+#h03{
+    font-weight: bold;
+    padding: 30px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+#h04{
+    font-weight: bold;
+    padding: 30px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+#h05{
+    font-weight: bold;
+    padding: 30px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+#d01{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d02{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d03{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d04{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d05{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d06{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d07{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d08{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d09{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d10{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d11{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d12{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d13{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d14{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d15{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d16{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d17{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d18{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d19{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#d20{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#inL{
+display: inline;
+font-weight: bold;
+}
